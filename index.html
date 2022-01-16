@@ -24,16 +24,20 @@
                 font-family: 'Righteous', cursive;
             }
 
-            .li {
-            @apply mx-10;
+            .a {
+                @apply m-10 relative;
             }
 
             .listTwo {
-            @apply my-4;
+                @apply my-4;
             }
 
             .spacing{
                 @apply px-10 md:px-96;
+            }
+
+            .afterLinks{
+                @apply after:content-[''] after:absolute after:bg-white after:h-1 after:w-0 after:top-[2.5rem] after:left-[0rem] after:transition-all after:duration-500 after:hover:w-full
             }
 
         }
@@ -44,15 +48,15 @@
     <div class="px-6">
         <div class="">
             <header class="max-w-screen my-3">
-                <div class="flex justify-between md:justify-evenly my-auto items-center">
+                <div class="flex justify-between lg:justify-evenly my-auto items-center">
                     <img src="src/images/logo.png" alt="" />
-                    <ul class="hidden md:flex">
-                        <li><a class="li" href="#">Comunidade Ballerini</a></li>
-                        <li><a class="li" href="#">Tutorial</a></li>
-                        <li><a class="li" href="#">Open Source</a></li>
-                        <li><a class="li" href="#">Comandos</a></li>
+                    <ul class="hidden lg:flex">
+                        <a class="a afterLinks" href="#">Comunidade Ballerini</a>
+                        <a class="a afterLinks" href="#">Tutorial</a>
+                        <a class="a afterLinks" href="#">Open Source</a>
+                        <a class="a afterLinks" href="#">Comandos</a>
                     </ul>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="md:hidden h-10 w-10" fill="none" viewBox="0 0 24 24"
+                    <svg xmlns="http://www.w3.org/2000/svg" class="lg:hidden h-10 w-10" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M4 6h16M4 12h16M4 18h16" />
@@ -89,7 +93,7 @@
                 </div>
             </main>
             <hr class="my-16">
-            <footer class=""><img class="m-auto" src="src/images/BALLERINI.png" alt=""></footer>
+            <footer class=""><img class="m-auto pb-10" src="src/images/BALLERINI.png" alt=""></footer>
         </div>
     </div>
 
